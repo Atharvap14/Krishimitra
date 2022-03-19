@@ -6,7 +6,6 @@ import numpy as np
 import urllib3
 import matplotlib.pyplot as plt
 import requests
-#api_key = "b4e0f14124fb424694a112655221903"
 api_key=st.secrets["api_key"]
  
 # base_url variable to store url
@@ -33,7 +32,7 @@ precp_mm=x['current']['precip_mm']
 # Check the value of "cod" key is equal to
 # "404", means city is found otherwise,
 # city is not found
-
+st.write(!pwd)
 st.write("""
 # KRISHIMITRA
 ## स्मार्ट खेती समाधान
@@ -63,7 +62,6 @@ def predict_from_model(dist_v):
   return stringtemp + stringHum  + stringRainfall
 
 path_to_models='Models_statistical'
-#baseURL = 'https://api.thingspeak.com/channels/1677274/feeds.json?api_key=IM12G9K17XCZT79G&results=60'
 baseURL= st.secrets["ThingspeakAPI"]
 option = st.selectbox(
      'फसल का चयन करें',
