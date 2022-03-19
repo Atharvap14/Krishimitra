@@ -62,7 +62,7 @@ def predict_from_model(dist_v):
     stringtemp='वर्षा इष्टतम से अधिक है।'
   return stringtemp + stringHum  + stringRainfall
 
-path_to_models='InterIIT\Models_statistical'
+path_to_models='/app/krishimitra/InterIIT/Models_statistical'
 baseURL= st.secrets["ThingspeakAPI"]
 option = st.selectbox(
      'फसल का चयन करें',
@@ -121,7 +121,7 @@ if st.button('अवस्था जांच'):
     ## एआई आधारित फसल की स्थिति और सुझाव 
     """)
     
-    model=joblib.load(path_to_models+'\model_'+option+'.joblib')
+    model=joblib.load(path_to_models+'/model_'+option+'.joblib')
     prediction=predict_from_model(dist_fromModel(model,np.array([[Inference_DF['field1'].mean(),Inference_DF['field2'].mean(),precp_mm]]))[0]) 
     st.write("""## फसल की स्थिति""")
     st.write( prediction)
