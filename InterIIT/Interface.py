@@ -6,6 +6,7 @@ import numpy as np
 import urllib3
 import matplotlib.pyplot as plt
 import requests
+import os
 api_key=st.secrets["api_key"]
  
 # base_url variable to store url
@@ -32,7 +33,7 @@ precp_mm=x['current']['precip_mm']
 # Check the value of "cod" key is equal to
 # "404", means city is found otherwise,
 # city is not found
-st.write(!pwd)
+st.write(os.get_cwd())
 st.write("""
 # KRISHIMITRA
 ## स्मार्ट खेती समाधान
