@@ -33,7 +33,7 @@ precp_mm=x['current']['precip_mm']
 # Check the value of "cod" key is equal to
 # "404", means city is found otherwise,
 # city is not found
-st.write(os.listdir())
+st.write(os.getcwd())
 st.write("""
 # KRISHIMITRA
 ## स्मार्ट खेती समाधान
