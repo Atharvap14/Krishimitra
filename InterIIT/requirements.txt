@@ -1,7 +1,5 @@
 joblib
-json
 pandas
 numpy
 urllib3
 matplotlib
-requests
