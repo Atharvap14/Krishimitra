@@ -1,5 +1,4 @@
 joblib
-streamlit
 json
 pandas
 numpy
