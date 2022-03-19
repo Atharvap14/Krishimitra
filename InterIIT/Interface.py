@@ -62,7 +62,7 @@ def predict_from_model(dist_v):
     stringtemp='वर्षा इष्टतम से अधिक है।'
   return stringtemp + stringHum  + stringRainfall
 
-path_to_models='InterIIT/Models_statistical/'
+path_to_models='InterIIT/Models_statistical'
 baseURL= st.secrets["ThingspeakAPI"]
 option = st.selectbox(
      'फसल का चयन करें',
