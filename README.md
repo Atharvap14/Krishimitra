@@ -1,4 +1,11 @@
 # Krishimitra
+## Overview
+
+Project was a part of Silicon Lab Social Entrepreneurship Challenge.
+* Implemented End to End IoT based solution for precision farming
+* Developed statistical models for prediction of crop states
+* Deployed a multilingual web app for farmers to track the real time state of their farms.
+
 ## File Structure : 
 
 	|
